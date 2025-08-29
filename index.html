@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>vagabundos</title>
+</head>
+<body>
+<nav>
+  <img class="logoNav" src="asset/Logo_vagabundos_PNG.png" alt="Logo">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" href="#inicio">inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#servicio">servicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#galeria">galería</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contacto">contacto</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <conteiner class="Logo">
+    <img src="asset/bichin1.jpg">
+    <div id="inicio" class="quienes">
+        <h1>Vagabundos</h1>
+        <p>Vagabundos Miami es un servicio de chef privado que ofrece experiencias culinarias sensoriales y únicas. Su enfoque se centra en una cocina de autor que combina elementos de la cocina medicinal e indígena, proporcionando una fusión de sabores que deleitan los sentidos. Además, ofrecen servicios exclusivos como cenas privadas en yates y eventos personalizados.</p>
+      </div>
+  </conteiner> 
+  <conteiner id="servicio" class="servicio">
+    <div class="servicioDiv">
+      <h1>Cocina libre, alma nómada.</h1>
+      <p> "Sobre mí"
+        Vagabundos Miami es una propuesta culinaria que trasciende lo convencional. Como chef privado, me especializo en crear experiencias gastronómicas sensoriales que fusionan la cocina de autor con elementos medicinales. Cada plato es una invitación a un viaje de sabores y sensaciones, diseñado para nutrir tanto el cuerpo como el alma. Ya sea en la intimidad de tu hogar, a bordo de un yate privado o en eventos especiales, mi compromiso es ofrecer una experiencia culinaria única y personalizada que celebre la diversidad y riqueza de la cocina global.
+      </p>
+    </div>
+    <img  class="mesaPlatos" src="asset/platos1.jpg">
+  </conteiner>
+  <conteirner id="galeria" class="Cgaleria">
+      <div class="galeria">
+        <img class="galeria-img G1" src="asset/galeria 2.jpg">
+        <img class="galeria-img G2" src="asset/galeria 1.jpg">
+        <img class="galeria-img G3" src="asset/galeria 3.jpg">
+        <img class="galeria-img G4" src="asset/galeria 4.jpg">
+        <img class="galeria-img G5" src="asset/galeria 5.jpg">
+        <img class="galeria-img G6" src="asset/galeria 6.jpg">
+    </div>
+    <article class="momentos">
+      <div>
+        <h2>Momentos Vagabundos</h2>
+        <ul class="momentos-lista">
+          <li>Cenas privadas</li>
+          <li>Asados gourmet</li>
+          <li>Eventos & celebraciones</li>
+          <li>Experiencias en yates</li>
+      </div>
+      </ul>
+    </article>
+  </conteirner>
+<div id="contacto" class="formulario">
+  <h2>Reservá tu lugar</h2>
+  <form class="contacto">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefono">Teléfono</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="fecha">Fecha de reserva</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="personas">Cantidad de personas</label>
+    <input type="number" id="personas" name="personas" min="1" required>
+
+    <label for="mensaje">Mensaje o detalles adicionales</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Algo especial? Mesa afuera, cumple, etc."></textarea>
+
+    <button type="submit">Enviar reserva</button>
+  </form>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-contenido">
+    <p>&copy; 2025 Vagabundos. Todos los derechos reservados.</p>
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/vagabundos_miami?utm_source=ig_web_button_share_sheet&igsh=ZGV4MjUwZGZzdWp4"> <img src="asset/social.png"  width="80 px"></a>
+      <a href="https://www.instagram.com/vagabundos_miami?utm_source=ig_web_button_share_sheet&igsh=ZGV4MjUwZGZzdWp4"> <img src="asset/gmail.png"  width="80 px"></a>
+      <a href="https://www.instagram.com/vagabundos_miami?utm_source=ig_web_button_share_sheet&igsh=ZGV4MjUwZGZzdWp4"> <img src="asset/whatsapp.png"  width="80 px"></a>
+    </div>
+  </div>
+</footer>
+
+    
+</body>
+<script src="java/java.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
