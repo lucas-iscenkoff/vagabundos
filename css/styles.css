@@ -2,11 +2,18 @@
     padding: 0%;
     margin: 0%;
 }
-.color1 {color: #ee7100;}
-.color2 {color: #ffb007;}
-.color3 {color: #fff658;}
-.color4 {color: #fffbb2;}
-.color5 {color: #fffbf3;}
+@font-face {
+    font-family: "Bebas";
+    src: url(../fuentes/BebasNeue-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.color1 {color: #c22929;}
+.color2 {color: #c26729;}
+.color3 {color: #c99f2b;}
+.color4 {color: #d9d988;}
+.color5 {color: #e8e8c8;}
 body{
     background-image: 
     linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
@@ -16,13 +23,15 @@ body{
 }
 h1{
     font-family: 'Montserrat', sans-serif;
-    margin: 10px;
-    color: #000;
+    color: #c99f2b
 }
 h2{
     font-family: 'Montserrat', sans-serif;
-    margin: 10px;
-    color: #000;
+    color: #c99f2b
+}
+h3{
+    font-family: 'montserrat';
+    color: #c99f2b
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -53,91 +62,125 @@ ul{
     justify-content: end;
 }
 .logoNav{
-    width: 100px;
+    width: 120px;
     height: auto;
     mix-blend-mode: multiply;
 }
 
 /* principal quien somos */
-
 .Logo{
+    height: 230px;
     background-image: url(../asset/fondoInicio.jpg);
-    background-size:100% 550px;
+    background-size:100% ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
-.Logo img {
-    padding: 5px;
-    margin-left: 20px;
-    width: 35%;
-    height: 65%;
-}
-.quienes{
+.vagabundos{
+    width: -webkit-fill-available;
     align-content:normal;
-    justify-items: center;
     display: grid;
+    height: 180px;
+}
+.vagabundoLogoImg{
+    object-fit: none;
+    width: 300px;
+    position: absolute;
 }
 
-.Logo h1 {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: #fffbb2;
-    font-weight: 600;
-    margin: 30px;
+.VagabundoH1{
+    margin-left: 22px;
+    margin-top: 15px;
+    font-size: 70px;
+    font-family: "Bebas", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c99f2b;
+    letter-spacing: 0.12em;  
+
 }
-.Logo h2 {
-    display: flex;
-    color: #fffbb2;
-    font-weight: 600;
-    margin-top: 60px;
-    letter-spacing: 2px;
+.VagabundoH2{
+    font-size: 25px;
+    margin-left: 27px;
+    color: #d9d988;
 }
+.VagabundoH3{
+    margin-left: 27px;
+    font-size: 20px;
+    color: #d9d988;
+}
+
 
 /*sevicios */
+.servicioChef{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img card1"
+    "img card2";
+    margin: 1px;
+}
+
+.img-chef {
+    margin: 15px;
+    padding: 15px;
+    width: 90%;
+    height: auto;
+    grid-area: img;
+}
 .servicio {
-    justify-self: center;
-    width: 70%;
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    justify-self: end;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20px; 
-    padding: 25px;
-    margin: 25px;
     background-color:#fff65882 ;
+    grid-area: card1;
+}
+.servicio1 {
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#ee71004d ;
+    grid-area: card2;
 }
 
 .mesaPlatos {
-    width: 300px;
+    width: 180px;
     height: auto;
     border-radius: 10px;
 }
-
-.servicio p {
-    max-width: 500px;  /* ancho máximo del texto */
-    font-size: 16px;
-    line-height: 1.5;
-}
-.servicio1 {
-    justify-self: center;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px; 
-    padding: 25px;
-    margin: 25px;
-    background-color:#ee71004d ;
-}
-
 .mesaPlatos1 {
-    width: 300px;
+    width: 180px;
     height: auto;
     border-radius: 10px;
+}
+
+.servicio p{
+    font-size: 13px;
+}
+.servicio1 p{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.servicio1 div{
+    width: 65%;
+}
+.servicio h2{
+    color: #c26729;
+}
+.servicio1 h2{
+    color:#c22929 ;
 }
 
 
@@ -225,7 +268,7 @@ ul{
     height: auto;
     margin: auto;
 }
-h2 {
+.formulario h2 {
     text-align: center;
     margin-bottom: 20px;
 }
