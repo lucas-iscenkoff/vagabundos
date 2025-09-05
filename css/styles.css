@@ -14,14 +14,12 @@
         margin: 0%;
     }
 }
-@media (min-width: 740px) and (max-width: 1340px){
-    body{
-        background-image: 
-        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-            url(../asset/hoja-vintage-monocromatica-en-estilo-de-arte-en-linea.jpg);
-        background-position:right;
-        background-repeat: round;
-    }
+body{
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url(../asset/hoja-vintage-monocromatica-en-estilo-de-arte-en-linea.jpg);
+    background-position:right;
+    background-repeat: round;
 }
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -43,29 +41,90 @@ li{
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
-@media (min-width: 360px) and (max-width: 740px){
-    body * {
-        padding: 0%;
-        margin: 0%;
-    }
+@media (min-width: 360px) and (max-width: 740px) {
     nav {
         width: 100%;
         display: flex;
         align-items: flex-start;
-}
-    .logoNav{
-        width: 100px;
+        background-color: #f2f2f2;
     }
 
-    .nav justify-content-end {
-        width: 100%;
+    .logoNav {
+        width: 60px;
+    }
 
-}
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
 
     .nav-link {
-        font-size: 16px;
+        font-size: 12px;
+        font-family: "Lustria", serif;
+        color: #000;
+    }
+
+    .Logo {
+        height: 75px;
+        background-image: url(../asset/fondoInicio.jpg);
+        background-size: contain;
+        background-attachment: fixed;
+        display: flex;
+    }
+
+    .VagabundoH1 {
+        margin: 2px;
+        font-size: 25px;
+    }
+
+    .VagabundoH2 {
+        margin: 2px;
+        font-size: 8px;
+    }
+
+    .VagabundoH3 {
+        margin: 2px;
+        font-size: 7px;
+    }
+
+    .servicioChef {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "img"
+        "card1"
+        "card2";
+    }
+
+    .img-chef {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .servicio, .servicio1 {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        margin: 10px auto;
+        flex-direction: column; /* texto arriba y foto abajo */
+        text-align: center;
+    }
+
+    .mesaPlatos, .mesaPlatos1 {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .servicio p, .servicio1 p {
+        font-size: 14px;
+    }
 }
-}
+
+
+
+
 @media (min-width: 740px) and (max-width: 1340px){
     nav{
         position: fixed;
@@ -92,124 +151,127 @@ li{
         mix-blend-mode: multiply;
     }
 
+    .Logo{
+        height: 230px;
+        background-image: url(../asset/fondoInicio.jpg);
+        background-size:100% ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .vagabundos{
+        width: -webkit-fill-available;
+        align-content:normal;
+        display: grid;
+        height: 180px;
+    }
+    .vagabundoLogoImg{
+        object-fit: none;
+        width: 300px;
+        position: absolute;
+    }
+    
+    .VagabundoH1{
+        margin-left: 22px;
+        margin-top: 15px;
+        font-size: 70px;
+        font-family: "Bebas", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #c99f2b;
+        letter-spacing: 0.12em;  
+    
+    }
+    .VagabundoH2{
+        font-size: 25px;
+        margin-left: 27px;
+        color: #d9d988;
+    }
+    .VagabundoH3{
+        margin-left: 27px;
+        font-size: 20px;
+        color: #d9d988;
+    }
+
+    .servicioChef{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "img card1"
+        "img card2";
+        margin-top: 15px;
+    }
+    
+    .img-chef {
+        margin: 15px;
+        padding: 15px;
+        width: 90%;
+        height: auto;
+        grid-area: img;
+    }
+    .servicio {
+        height: 250px;
+        margin: 15px;
+        padding: 15px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(39 113 8 / 65%) ;
+        grid-area: card1;
+        margin-top: 30px;
+    }
+    .servicio1 {
+        height: 250px;
+        margin: 15px;
+        padding: 15px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:#c99f2b91 ;
+        grid-area: card2;
+    }
+    
+    .mesaPlatos {
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .mesaPlatos1 {
+        width: 180px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .servicio p{
+        font-size: 13px;
+    }
+    .servicio1 p{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    .servicio1 div{
+        width: 65%;
+    }
+    .servicio h2{
+        color: #c26729;
+    }
+    .servicio1 h2{
+        color: #c26729;
+    }
+
+
 }
 
 /* principal quien somos */
-.Logo{
-    height: 230px;
-    background-image: url(../asset/fondoInicio.jpg);
-    background-size:100% ;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
-.vagabundos{
-    width: -webkit-fill-available;
-    align-content:normal;
-    display: grid;
-    height: 180px;
-}
-.vagabundoLogoImg{
-    object-fit: none;
-    width: 300px;
-    position: absolute;
-}
-
-.VagabundoH1{
-    margin-left: 22px;
-    margin-top: 15px;
-    font-size: 70px;
-    font-family: "Bebas", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #c99f2b;
-    letter-spacing: 0.12em;  
-
-}
-.VagabundoH2{
-    font-size: 25px;
-    margin-left: 27px;
-    color: #d9d988;
-}
-.VagabundoH3{
-    margin-left: 27px;
-    font-size: 20px;
-    color: #d9d988;
-}
 
 
 /*sevicios */
-.servicioChef{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "img card1"
-    "img card2";
-    margin-top: 15px;
-}
-
-.img-chef {
-    margin: 15px;
-    padding: 15px;
-    width: 90%;
-    height: auto;
-    grid-area: img;
-}
-.servicio {
-    height: 250px;
-    margin: 15px;
-    padding: 15px;
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:rgb(39 113 8 / 65%) ;
-    grid-area: card1;
-    margin-top: 30px;
-}
-.servicio1 {
-    height: 250px;
-    margin: 15px;
-    padding: 15px;
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:#c99f2b91 ;
-    grid-area: card2;
-}
-
-.mesaPlatos {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-}
-.mesaPlatos1 {
-    width: 180px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.servicio p{
-    font-size: 13px;
-}
-.servicio1 p{
-    font-size: 13px;
-    margin-left: 5px;
-}
-.servicio1 div{
-    width: 65%;
-}
-.servicio h2{
-    color: #c26729;
-}
-.servicio1 h2{
-    color: #c26729;
-}
 
 /* corte*/
 .corte{
