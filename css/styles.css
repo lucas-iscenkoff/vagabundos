@@ -1,25 +1,27 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
 @font-face {
     font-family: "Bebas";
     src: url(../fuentes/BebasNeue-Regular.woff);
     font-weight: normal;
     font-style: normal;
 }
-
-.color1 {color: #c22929;}
-.color2 {color: #c26729;}
-.color3 {color: #c99f2b;}
-.color4 {color: #d9d988;}
-.color5 {color: #e8e8c8;}
-body{
-    background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-        url(../asset/hoja-vintage-monocromatica-en-estilo-de-arte-en-linea.jpg);
-    background-position:right;
-    background-repeat: round;
+*{
+    padding: 0%;
+    margin: 0%;
+}
+@media (min-width: 360px) and (max-width: 740px){
+    body * {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+@media (min-width: 740px) and (max-width: 1340px){
+    body{
+        background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+            url(../asset/hoja-vintage-monocromatica-en-estilo-de-arte-en-linea.jpg);
+        background-position:right;
+        background-repeat: round;
+    }
 }
 h1{
     font-family: 'Montserrat', sans-serif;
@@ -41,30 +43,55 @@ li{
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
-/*nav barra navegadora*/
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#fbfbfb14;
+@media (min-width: 360px) and (max-width: 740px){
+    body * {
+        padding: 0%;
+        margin: 0%;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
 }
-.nav-link{
-    font-family: "Lustria", serif;
-    font-size: 20px;
-    color: #000;
+    .logoNav{
+        width: 100px;
+    }
+
+    .nav justify-content-end {
+        width: 100%;
+
 }
-ul{
-    display: flex;
-    justify-content: end;
+
+    .nav-link {
+        font-size: 16px;
 }
-.logoNav{
-    width: 120px;
-    height: auto;
-    mix-blend-mode: multiply;
+}
+@media (min-width: 740px) and (max-width: 1340px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:#fbfbfb14;
+    }
+    .nav-link{
+        font-family: "Lustria", serif;
+        font-size: 20px;
+        color: #000;
+    }
+    ul{
+        display: flex;
+        justify-content: end;
+    }
+    .logoNav{
+        width: 120px;
+        height: auto;
+        mix-blend-mode: multiply;
+    }
+
 }
 
 /* principal quien somos */
@@ -140,7 +167,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color:#c99f2b91 ;
+    background-color:rgb(39 113 8 / 65%) ;
     grid-area: card1;
     margin-top: 30px;
 }
@@ -304,7 +331,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color:#ff6a05a8 ;
+    background-color:rgb(39 113 8 / 65%);
 }
 .momentos2, .momentos4 {
     height: 150px;
@@ -329,8 +356,6 @@ ul{
     padding: 5px;
 }
 
-
-
 /*formulario */
 .formulario{
     display: flex;
@@ -338,7 +363,7 @@ ul{
     align-items: flex-start;
     gap: 30px;
     padding: 20px;
-    background-color: #079c0759;
+    background-color: rgb(39 113 8 / 65%);
 }
 .formulario h2 {
     text-align: center;
@@ -387,20 +412,52 @@ button {
 /*footer*/
 .footer {
     background: linear-gradient(rgba(255,255,255,0.6), rgba(0, 0, 0, 0.6));
-    padding: 20px 0;
-    text-align: center;
-    height: 150px;
-    display: grid;
-    margin-top: 25px;
+    color: #f2f2f2;
+    padding: 20px;
+    font-family: 'Bebas', sans-serif;
 }
 
-.footer p {
-    margin-bottom: 15px;
-    font-family: "Lustria", serif;
-    font-size: 14px;
-    color: #333;
-    height: 40%;
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* para móviles */
+    margin-bottom: 10px;
 }
+
+.footer-logo img {
+    height: 150px;
+    width: auto;
+}
+
+.footer-nombre h2 {
+    margin-right: 120px;
+    font-size: 70px;
+    font-family: "Bebas", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333230;
+    letter-spacing: 0.12em;
+}
+
+.footer-redes {
+    display: grid;
+    gap: 20px;
+}
+
+.footer-redes a {
+    color: #333230;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.footer-creditos {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
 
 
 
