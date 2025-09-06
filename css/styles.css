@@ -4,9 +4,11 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
-    padding: 0%;
-    margin: 0%;
+@media (min-width: 740px) and (max-width: 1340px){
+    body *{
+        padding: 0%;
+        margin: 0%;
+    }
 }
 @media (min-width: 360px) and (max-width: 740px){
     body * {
@@ -89,6 +91,7 @@ li{
     }
 
     .servicioChef {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
         "img"
@@ -97,28 +100,172 @@ li{
     }
 
     .img-chef {
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin: 0 auto;
+        margin: 1px;
         padding: 10px;
     }
 
-    .servicio, .servicio1 {
-        width: 90%;
-        height: auto;
+    .servicio {
         justify-self: center;
-        margin: 10px auto;
-        flex-direction: column; /* texto arriba y foto abajo */
+        margin: 15px;
+        padding: 10px;
         text-align: center;
+        background-color:rgb(39 113 8 / 65%) ;
+    }
+    .servicio1 {
+        justify-self: center;
+        margin: 15px;
+        padding: 10px;
+        text-align: center;
+        background-color:#c99f2b91
     }
 
     .mesaPlatos, .mesaPlatos1 {
-        width: 100%;
-        max-width: 250px;
+        display: flex;
+        justify-self: center;
+        width: 80%;
+        max-width: 180px;
+        margin: 5px;
     }
 
     .servicio p, .servicio1 p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+        .corte{
+        display: flex;
+        margin-top: 10px;
+        height: 100px;
+        background-image: url(../asset/corte.jpg);
+        background-size:contain ;
+        background-attachment: fixed;
+    }
+    .corteH2{
+        align-self: center;
+        color: #d9d988;
+        font-size: 30px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+
+        .Cgaleria{
+        margin-top: 10px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .galeria{
+        margin: 15px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns:30% 35% 35%;
+        grid-template-rows:40% 40% 20%;
+        grid-template-areas:
+            "g1 g2 g2"
+            "g3 g2 g2"
+            "g4 g5 g6";
+        width: 90%;
+        height: auto;
+        gap: 2px;
+    }
+    .galeria div {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .galeria img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .G1{
+        width: auto;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .G2{
+        width: auto;
+        height: 370px;
+        border-radius: 10px;
+    }
+    .G3{
+        width: auto;
+        height: 170px;
+        border-radius: 10px;
+    }
+    .G4{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G5{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G6{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G1 { grid-area: g1; }
+    .G2 { grid-area: g2; }
+    .G3 { grid-area: g3; }
+    .G4 { grid-area: g4; }
+    .G5 { grid-area: g5; }
+    .G6 { grid-area: g6; }
+    
+    .grow{
+        transform: scale(1.2);
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .momentos{
+        width: 90%;
+    }
+    .momentos p{
+        font-size: 40%;
+        padding: 5px;
+    }
+    .momentos h2{
+        text-align: center;
+        color: #c26729;
+        font-size: 50%;
+        filter: drop-shadow(1px 1px  black);
+    }
+    
+    .momentos1, .momentos3{
+        height: 150px;
+        margin: 5px;
+        padding: 5px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(39 113 8 / 65%);
+    }
+    .momentos2, .momentos4 {
+        height: 150px;
+        margin: 5px;
+        padding: 5px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:#c99f2b91 ;
+    }
+    .momentosImg1, .momentosImg3{
+        width: 35%;
+        height: auto;
+        border-radius: 10px;
+        padding:5px;
+    }
+    .momentosImg2, .momentosImg4{
+        width: 35%;
+        height: auto;
+        border-radius: 10px;
+        padding: 5px;
     }
 }
 
@@ -265,260 +412,249 @@ li{
         color: #c26729;
     }
 
+    .corte{
+        display: flex;
+        margin-top: 15px;
+        height: 125px;
+        background-image: url(../asset/corte.jpg);
+        background-size:100% ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .corteH2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: #d9d988;
+        font-size: 50px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+    
+    .Cgaleria{
+        margin-top: 30px;
+        padding: 15px;
+        display: flex;
+        justify-content:left;
+    }
+    .galeria{
+        margin: 15px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns:30% 35% 35%;
+        grid-template-rows:40% 40% 20%;
+        grid-template-areas:
+            "g1 g2 g2"
+            "g3 g2 g2"
+            "g4 g5 g6";
+        width: 40%;
+        height: 500px;
+        gap: 2px;
+    }
+    .galeria div {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .galeria img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .G1{
+        width: auto;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .G2{
+        width: auto;
+        height: 370px;
+        border-radius: 10px;
+    }
+    .G3{
+        width: auto;
+        height: 170px;
+        border-radius: 10px;
+    }
+    .G4{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G5{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G6{
+        width: auto;
+        height: 95px;
+        border-radius: 10px;
+    }
+    .G1 { grid-area: g1; }
+    .G2 { grid-area: g2; }
+    .G3 { grid-area: g3; }
+    .G4 { grid-area: g4; }
+    .G5 { grid-area: g5; }
+    .G6 { grid-area: g6; }
+    
+    .grow{
+        transform: scale(1.2);
+        transition: transform 0.5s ease, box-shadow 0.3s ease;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .momentos{
+        width: 57%;
+        margin-left: auto;
+    }
+    .momentos p{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .momentos h2{
+        text-align: center;
+        color: #c26729;
+        filter: drop-shadow(1px 1px  black);
+    }
+    
+    .momentos1, .momentos3{
+        height: 150px;
+        margin: 5px;
+        padding: 5px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(39 113 8 / 65%);
+    }
+    .momentos2, .momentos4 {
+        height: 150px;
+        margin: 5px;
+        padding: 5px;
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color:#c99f2b91 ;
+    }
+    .momentosImg1, .momentosImg3{
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        padding:5px;
+    }
+    .momentosImg2, .momentosImg4{
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
 
-}
-
-/* principal quien somos */
-
-
-/*sevicios */
-
-/* corte*/
-.corte{
-    display: flex;
-    margin-top: 15px;
-    height: 125px;
-    background-image: url(../asset/corte.jpg);
-    background-size:100% ;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.corteH2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    color: #d9d988;
-    font-size: 50px;
-    filter: drop-shadow(2px 4px 6px black);
-}
-
-
-
-
-/* galeria */
-.Cgaleria{
-    margin-top: 30px;
-    padding: 15px;
-    display: flex;
-    justify-content:left;
-}
-.galeria{
-    margin: 15px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns:30% 35% 35%;
-    grid-template-rows:40% 40% 20%;
-    grid-template-areas:
-        "g1 g2 g2"
-        "g3 g2 g2"
-        "g4 g5 g6";
-    width: 40%;
-    height: 500px;
-    gap: 2px;
-}
-.galeria div {
-    border-radius: 10px;
-    overflow: hidden;
-}
-.galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.G1{
-    width: auto;
-    height: 185px;
-    border-radius: 10px;
-}
-.G2{
-    width: auto;
-    height: 370px;
-    border-radius: 10px;
-}
-.G3{
-    width: auto;
-    height: 170px;
-    border-radius: 10px;
-}
-.G4{
-    width: auto;
-    height: 95px;
-    border-radius: 10px;
-}
-.G5{
-    width: auto;
-    height: 95px;
-    border-radius: 10px;
-}
-.G6{
-    width: auto;
-    height: 95px;
-    border-radius: 10px;
-}
-.G1 { grid-area: g1; }
-.G2 { grid-area: g2; }
-.G3 { grid-area: g3; }
-.G4 { grid-area: g4; }
-.G5 { grid-area: g5; }
-.G6 { grid-area: g6; }
-
-.grow{
-    transform: scale(1.2);
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-}
-
-.momentos{
-    width: 57%;
-    margin-left: auto;
-}
-.momentos p{
-    font-size: 12px;
-    padding: 5px;
-}
-.momentos h2{
-    text-align: center;
-    color: #c26729;
-    filter: drop-shadow(1px 1px  black);
-}
-
-.momentos1, .momentos3{
-    height: 150px;
-    margin: 5px;
-    padding: 5px;
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:rgb(39 113 8 / 65%);
-}
-.momentos2, .momentos4 {
-    height: 150px;
-    margin: 5px;
-    padding: 5px;
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color:#c99f2b91 ;
-}
-.momentosImg1, .momentosImg3{
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    padding:5px;
-}
-.momentosImg2, .momentosImg4{
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-/*formulario */
-.formulario{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px;
-    background-color: rgb(39 113 8 / 65%);
-}
-.formulario h2 {
-    text-align: center;
-    filter: drop-shadow(1px 1px  black);
-}
-.contacto{
-    margin-left: 60px;
-    width: 50%;
-}
-label {
-    width: 20%;
-    margin-left: 20px;
-    display: block;
-    height: 40px;
-    font-weight: bold;
-    color: #444;
-    font-size: 13px;
-}
-input{
-    margin-left: 20px;
-    width: 30%;
-    height: 80%;
-    font-size: 13px;
-    border: 1px solid #00000063;
-    border-radius: 8px;
-}
-textarea{
-    margin-left: 20px;
-    width: 20%;
-    height: 80%;
-    border-radius: 8px;
-    border: 1px solid #00000063;
-}
-button {
-    justify-content: center;
-    width: 120px;
-    height: 25px;
-    display: flex;
-    justify-self: center;
-    background-color: #000000ad;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-}
-/*footer*/
-.footer {
-    background: linear-gradient(rgba(255,255,255,0.6), rgba(0, 0, 0, 0.6));
-    color: #f2f2f2;
-    padding: 20px;
-    font-family: 'Bebas', sans-serif;
-}
-
-.footer-contenido {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; /* para móviles */
-    margin-bottom: 10px;
-}
-
-.footer-logo img {
-    height: 150px;
-    width: auto;
-}
-
-.footer-nombre h2 {
-    margin-right: 120px;
-    font-size: 70px;
-    font-family: "Bebas", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #333230;
-    letter-spacing: 0.12em;
-}
-
-.footer-redes {
-    display: grid;
-    gap: 20px;
-}
-
-.footer-redes a {
-    color: #333230;
-    text-decoration: none;
-    font-size: 25px;
+    .formulario{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px;
+        background-color: rgb(39 113 8 / 65%);
+    }
+    .formulario h2 {
+        text-align: center;
+        filter: drop-shadow(1px 1px  black);
+    }
+    .contacto{
+        margin-left: 60px;
+        width: 50%;
+    }
+    label {
+        width: 20%;
+        margin-left: 20px;
+        display: block;
+        height: 40px;
+        font-weight: bold;
+        color: #444;
+        font-size: 13px;
+    }
+    input{
+        margin-left: 20px;
+        width: 30%;
+        height: 80%;
+        font-size: 13px;
+        border: 1px solid #00000063;
+        border-radius: 8px;
+    }
+    textarea{
+        margin-left: 20px;
+        width: 20%;
+        height: 80%;
+        border-radius: 8px;
+        border: 1px solid #00000063;
+    }
+    button {
+        justify-content: center;
+        width: 120px;
+        height: 25px;
+        display: flex;
+        justify-self: center;
+        background-color: #000000ad;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    /*footer*/
+    .footer {
+        background: linear-gradient(rgba(255,255,255,0.6), rgba(0, 0, 0, 0.6));
+        color: #f2f2f2;
+        padding: 20px;
+        font-family: 'Bebas', sans-serif;
+    }
+    
+    .footer-contenido {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap; /* para móviles */
+        margin-bottom: 10px;
+    }
+    
+    .footer-logo img {
+        height: 150px;
+        width: auto;
+    }
+    
+    .footer-nombre h2 {
+        margin-right: 120px;
+        font-size: 70px;
+        font-family: "Bebas", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #333230;
+        letter-spacing: 0.12em;
+    }
+    
+    .footer-redes {
+        display: grid;
+        gap: 20px;
+    }
+    
+    .footer-redes a {
+        color: #333230;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    
+    .footer-creditos {
+        text-align: center;
+        font-size: 14px;
+        color: #aaa;
+        margin-top: 10px;
+    }
 }
 
-.footer-creditos {
-    text-align: center;
-    font-size: 14px;
-    color: #aaa;
-    margin-top: 10px;
-}
+
 
 
 
