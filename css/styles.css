@@ -15,15 +15,16 @@
         display: grid;
         height: 180px;
     }
-    .servicio {
-        margin-top: 30px;
-        margin: 15px;
-    }
+
     .formulario{
         gap: 30px;
         padding: 20px;
     
-
+    }
+    .contacto{
+        margin-left: 60px;
+        width: 50%;
+    }
 }
 
 
@@ -107,6 +108,8 @@
         grid-area: img;
     }
     .servicio {
+        margin-top: 30px;
+        margin: 15px;
         height: 250px;
         padding: 15px;
         justify-self: end;
@@ -192,7 +195,7 @@
             "g1 g2 g2"
             "g3 g2 g2"
             "g4 g5 g6";
-        width: 40%;
+        width: 500px;
         height: 500px;
         gap: 2px;
     }
@@ -300,18 +303,13 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 30px;
-        padding: 20px;
         background-color: rgb(39 113 8 / 65%);
     }
     .formulario h2 {
         text-align: center;
         filter: drop-shadow(1px 1px  black);
     }
-    .contacto{
-        margin-left: 60px;
-        width: 50%;
-    }
+
     label {
         width: 20%;
         margin-left: 20px;
@@ -403,4 +401,3 @@
 
 
 
-}

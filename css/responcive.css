@@ -1,5 +1,5 @@
 
-@media (min-width: 360px) and (max-width: 740px){
+@media (min-width: 360px) and (max-width: 739px){
     body * {
         padding: 0%;
         margin: 0%;
@@ -97,15 +97,14 @@
     .servicio h2 .servicio1 h2{
         font-size: 15px;
     }
-.servicio p, .servicio1 p {
-    font-size: 12px;
-    height: 100px;        
-    overflow-y: auto;
-    text-align: justify;
-    padding-right: 5px;    
-}
-
+    .servicio p, .servicio1 p {
+        font-size: 12px;
+        height: 100px;        
+        overflow-y: auto;
+        text-align: justify;
+        padding-right: 5px;    
     }
+
 
         .corte{
         display: flex;
@@ -122,7 +121,7 @@
         filter: drop-shadow(2px 4px 6px black);
     }
 
-        .Cgaleria{
+    .Cgaleria{
         margin-top: 10px;
         padding: 15px;
         display: grid;
@@ -138,7 +137,7 @@
             "g1 g2 g2"
             "g3 g2 g2"
             "g4 g5 g6";
-        width: 99%;
+        width: 75%;
         height: auto;
         gap: 2px;
     }
@@ -343,3 +342,5 @@
         margin-top: 10px;
     }
 
+
+}
