@@ -16,9 +16,14 @@
         height: 180px;
     }
     .servicio {
-    margin-top: 30px;
-    margin: 15px;
+        margin-top: 30px;
+        margin: 15px;
     }
+    .formulario{
+        gap: 30px;
+        padding: 20px;
+    
+
 }
 
 
@@ -157,8 +162,8 @@
         height: 125px;
         background-image: url(../asset/corte.jpg);
         background-size:100% ;
-        background-attachment: fixed;
         background-position: center;
+        background-attachment: fixed;
         background-repeat: no-repeat;
     }
     .corteH2{
@@ -398,3 +403,4 @@
 
 
 
+}
